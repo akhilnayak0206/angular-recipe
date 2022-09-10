@@ -8,8 +8,8 @@
         <!--Alternative non-collapsible navbar-->
         <!--<div class="navbar-default">-->
             <ul class="nav navbar-nav">
-                <li routerLinkActive="active"><a routerLink="/recipes">Recipes</a></li>
-                <li routerLinkActive="active"><a routerLink="/shopping-list">Shopping List</a></li>
+                <li routerLinkActive="active" (click)="onSelect('recipe')"><a routerLink="/recipes">Recipes</a></li>
+                <li routerLinkActive="active" (click)="onSelect('shopping-list')"><a routerLink="/shopping-list">Shopping List</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <!-- <ng-template [ngIf]="!isAuthenticated()">
